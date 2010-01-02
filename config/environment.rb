@@ -21,9 +21,7 @@ Rails::Initializer.run do |config|
 
   config.gem "highline"
   config.gem "RedCloth"
-  # Need to do rspec here and not in test.rb. Needed for rake to work which loads
-  # the rspec.task file
-  config.gem "rspec", :lib => false, :version => ">=1.2.2"
+  config.gem "soap4r", :lib => false
   config.gem 'datanoise-actionwebservice', :lib => 'actionwebservice'
 
   config.action_controller.use_accept_header = true
